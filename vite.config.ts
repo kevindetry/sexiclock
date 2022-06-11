@@ -23,12 +23,5 @@ export default defineConfig({
     sourcemap: true,
     target,
   },
-  plugins: [
-    react({
-      jsxImportSource: "@emotion/react",
-      babel: {
-        plugins: ["@emotion/babel-plugin"],
-      },
-    }),
-  ],
+  plugins: [react()],
 });
